@@ -280,6 +280,7 @@ public class Prettify {
 
       decorateSourceMap = new HashMap<String, Object>();
       decorateSourceMap.put("keywords", "null,true,false");
+      decorateSourceMap.put("cStyleComments", true);
       registerLangHandler(sourceDecorator(decorateSourceMap), Arrays.asList(new String[]{"json"}));
 
       decorateSourceMap = new HashMap<String, Object>();
